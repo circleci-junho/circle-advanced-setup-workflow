@@ -120,7 +120,6 @@ orbs:
                 if [ ! -f "<< parameters.modules >>" ] || [ ! -s "<< parameters.modules >>" ]
                 then
                   echo 'Nothing to merge. Halting the job.'
-                  circleci-agent step halt
                   exit
                 fi
 
